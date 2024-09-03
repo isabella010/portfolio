@@ -1,15 +1,24 @@
 /*font imports*/
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 /*font-family: "Exo 2", sans-serif;*/
+
+
 * {
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    background-color: #2f0c30;
+    /* background-color: antiquewhite; */
 }
 
 body {
-    font-family: "Kalnia Glaze", serif;
+    /* font-family: "Kalnia Glaze", serif; */
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #23f546;
 }
 
 html{
@@ -17,7 +26,8 @@ html{
 }
 
 p{
-    color: rgb(85,85,85);
+    /* color: rgb(85,85,85); */
+    color: #f5feda; 
 }
 
 /* transition */
@@ -45,16 +55,16 @@ nav{
 }
 
 a {
-    color: black;
+    color: #23f546;
     text-decoration: none;
-    text-decoration-color: rgb(170, 170, 170);
+    text-decoration-color: #f5feda;
 }
 
 a:hover{
-    color: rgb(255, 84, 229);
+    color: #f5feda;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(255, 84, 229);/*might change*/
+    text-decoration-color: #23f546
 }
 
 .logo{
@@ -88,7 +98,7 @@ a:hover{
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: #23f546;
     transition: all 0.3 ease-in-out;
 }
 
@@ -108,7 +118,7 @@ a:hover{
     padding: 8px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: #23f546;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -195,6 +205,28 @@ section{
     margin-bottom: 1rem;
     font-family: "Exo 2", sans-serif;
     text-shadow: none;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    max-width: fit-content; /* Ensures the width is only as wide as the content */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #23f546; }
   }
   
   .title {
@@ -234,7 +266,8 @@ section{
   
   .btn-color-1,
   .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    margin-top: 0.8rem;
+    border: #f5feda solid;
   }
   
   .btn-color-1:hover,
@@ -244,16 +277,17 @@ section{
   
   .btn-color-1,
   .btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
+    background: #f5feda;
+    color: #2f0c30;
   }
   
   .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: #23f546;
   }
   
   .btn-color-2 {
     background: none;
+    color: #23f546
   }
   
   .btn-color-2:hover {
@@ -287,6 +321,7 @@ section{
   }
   
   .about-pic {
+    padding: 2rem;
     border-radius: 2rem;
   }
   
@@ -301,8 +336,8 @@ section{
     flex: 1;
     /* background: white; */
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.2rem solid;
-    border-color: rgb(163, 163, 163);
+    border: #f5feda 0.2rem solid;
+    border-color: #f5feda ;
     text-align: center;
   }
   
@@ -324,7 +359,7 @@ section{
   }
   
   .experience-sub-title {
-    color: rgb(85, 85, 85);
+    color: #f5feda;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -348,7 +383,7 @@ section{
   article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    
     gap: 0.5rem;
   }
   
@@ -375,12 +410,12 @@ section{
   
   .project-title {
     margin: 1rem;
-    color: black;
+    color: #23f546;
   }
   
   .project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
+    color: #f5feda;
+    border-color: #f5feda;
   }
   
   /* CONTACT */
@@ -420,7 +455,7 @@ section{
   }
   
   .email-icon {
-    height: 2.5rem;
+    height: 2rem;
   }
   
   /* FOOTER SECTION */
