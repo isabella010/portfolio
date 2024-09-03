@@ -336,8 +336,8 @@ section{
     flex: 1;
     /* background: white; */
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.2rem solid;
-    border-color: rgb(163, 163, 163);
+    border: #f5feda 0.2rem solid;
+    border-color: #f5feda ;
     text-align: center;
   }
   
@@ -359,7 +359,7 @@ section{
   }
   
   .experience-sub-title {
-    color: rgb(85, 85, 85);
+    color: #f5feda;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -410,12 +410,12 @@ section{
   
   .project-title {
     margin: 1rem;
-    color: black;
+    color: #23f546;
   }
   
   .project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
+    color: #f5feda;
+    border-color: #f5feda(163, 163, 163);
   }
   
   /* CONTACT */
