@@ -383,7 +383,7 @@ section{
   article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    
     gap: 0.5rem;
   }
   
@@ -415,7 +415,7 @@ section{
   
   .project-btn {
     color: #f5feda;
-    border-color: #f5feda(163, 163, 163);
+    border-color: #f5feda;
   }
   
   /* CONTACT */
@@ -455,7 +455,7 @@ section{
   }
   
   .email-icon {
-    height: 2.5rem;
+    height: 2rem;
   }
   
   /* FOOTER SECTION */
